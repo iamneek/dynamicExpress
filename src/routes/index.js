@@ -1,7 +1,5 @@
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
+const bannerRoutes = require("./banner.routes");
+app.use("/banner", bannerRoutes);
 module.exports = router;
